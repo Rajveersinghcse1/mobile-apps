@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- PDF Icon -->
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="📄"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:background="#FFEBEE"
+            android:layout_gravity="center_vertical" />
+
+        <!-- PDF Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvFileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SFC_Report_20231027_123456.pdf"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+            <TextView
+                android:id="@+id/tvFileSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="125 KB"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tvFileDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="27 Oct 2023, 12:34 PM"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <Button
+                android:id="@+id/btnView"
+                android:layout_width="70dp"
+                android:layout_height="36dp"
+                android:text="View"
+                android:textSize="11sp"
+                android:textAllCaps="false"
+                android:backgroundTint="#2196F3"
+                android:textColor="@android:color/white"
+                android:padding="4dp" />
+
+            <Button
+                android:id="@+id/btnDownload"
+                android:layout_width="70dp"
+                android:layout_height="36dp"
+                android:text="Download"
+                android:textSize="10sp"
+                android:textAllCaps="false"
+                android:backgroundTint="#4CAF50"
+                android:textColor="@android:color/white"
+                android:padding="4dp"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

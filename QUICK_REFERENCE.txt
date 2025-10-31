@@ -1,0 +1,108 @@
+╔═══════════════════════════════════════════════════════════════╗
+║           SFC APP - QUICK REFERENCE CARD                      ║
+╚═══════════════════════════════════════════════════════════════╝
+
+📱 APP BEHAVIOR ON INSTALLATION
+────────────────────────────────────────────────────────────────
+When you install and FIRST LAUNCH the app:
+
+✅ Automatically creates these folders on your phone:
+   /Android/data/com.example.imageanalysis/files/SFC/
+      ├── ReferenceImages/   (empty, ready for your images)
+      └── ReferenceData/     (empty, ready for your JSON files)
+
+✅ Automatically saves default paths in Settings:
+   • Image Path: [path to ReferenceImages]
+   • Data Path: [path to ReferenceData]
+
+✅ Shows toast notification with folder location
+
+
+📂 WHERE TO FIND FOLDERS ON YOUR PHONE
+────────────────────────────────────────────────────────────────
+Open File Manager → Internal Storage → Android → data 
+→ com.example.imageanalysis → files → SFC
+
+You'll see:
+   📁 ReferenceImages/  ← PUT TEST IMAGES HERE
+   📁 ReferenceData/    ← PUT JSON FILES HERE
+
+
+🧪 HOW TO TEST THE APP
+────────────────────────────────────────────────────────────────
+1. Install app on Android phone
+2. Launch app (folders are created automatically!)
+3. Login: Test@example.com / test123
+4. Use File Manager to copy test files:
+   • Images → ReferenceImages folder
+   • JSON files → ReferenceData folder
+   (Make sure names match: rajveer.jpg + rajveer.json)
+5. In app: Menu → Settings (verify paths are already set ✓)
+6. Start Camera → Capture photo → Analyze Match
+7. View results → Export PDF
+
+
+📋 FILE REQUIREMENTS
+────────────────────────────────────────────────────────────────
+✅ Image and JSON must have SAME name:
+   ReferenceImages/rajveer.jpg  ←→  ReferenceData/rajveer.json
+   ReferenceImages/john.png     ←→  ReferenceData/john.json
+
+✅ Supported image formats: .jpg, .jpeg, .png
+
+
+🔑 LOGIN CREDENTIALS (Demo)
+────────────────────────────────────────────────────────────────
+Username: Test@example.com
+Password: test123
+
+
+⚙️ SETTINGS (Pre-configured!)
+────────────────────────────────────────────────────────────────
+The paths are ALREADY SET on first launch!
+You can view them in: Menu → Settings
+
+Default paths automatically configured:
+• Image Path: /storage/.../SFC/ReferenceImages
+• Data Path: /storage/.../SFC/ReferenceData
+
+You can change these if needed, but default works perfectly!
+
+
+🎯 MATCHING REQUIREMENTS
+────────────────────────────────────────────────────────────────
+• Similarity threshold: 75% or higher
+• Uses histogram + pixel comparison
+• Shows similarity percentage in results
+
+
+📄 JSON FORMAT EXAMPLE
+────────────────────────────────────────────────────────────────
+{
+    "name": "Rajveer Singh",
+    "employeeId": "EMP001",
+    "department": "IT",
+    "email": "rajveer@example.com"
+}
+
+
+🚨 TROUBLESHOOTING
+────────────────────────────────────────────────────────────────
+❌ "No reference images found"
+   → Make sure images are in ReferenceImages folder
+   → Check Settings paths are correct
+
+❌ "No match found"  
+   → Similarity is below 75%
+   → Try better lighting/angle
+   → Ensure reference image is similar
+
+❌ "No data file found"
+   → JSON filename must match image name exactly
+
+
+✨ NO MANUAL SETUP NEEDED!
+────────────────────────────────────────────────────────────────
+Just install → launch → folders created → paths set → ready!
+
+═══════════════════════════════════════════════════════════════
