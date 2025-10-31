@@ -1,0 +1,11 @@
+{
+  "name": "Rajveer Singh",
+  "id": "EMP001",
+  "department": "Engineering",
+  "position": "Software Developer",
+  "email": "rajveer@company.com",
+  "phone": "+91-9876543210",
+  "joinDate": "2023-01-15",
+  "location": "Mumbai, India",
+  "status": "Active"
+}

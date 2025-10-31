@@ -1,0 +1,11 @@
+{
+  "name": "John Doe",
+  "id": "EMP002",
+  "department": "Marketing",
+  "position": "Marketing Manager",
+  "email": "john.doe@company.com",
+  "phone": "+91-9876543211",
+  "joinDate": "2022-06-10",
+  "location": "Delhi, India",
+  "status": "Active"
+}

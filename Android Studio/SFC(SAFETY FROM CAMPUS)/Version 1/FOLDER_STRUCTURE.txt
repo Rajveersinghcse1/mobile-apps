@@ -1,0 +1,72 @@
+📱 SFC APP - FOLDER STRUCTURE ON ANDROID DEVICE
+═══════════════════════════════════════════════════════
+
+When you install and run the SFC app, these folders are AUTOMATICALLY created:
+
+📁 /Android/data/com.example.imageanalysis/files/SFC/
+   ├── 📁 ReferenceImages/    ← Put your test images here (.jpg, .png)
+   │   ├── rajveer.jpg
+   │   ├── john.jpg
+   │   └── smartwatch.jpg
+   │
+   └── 📁 ReferenceData/       ← Put your JSON files here (.json)
+       ├── rajveer.json
+       ├── john.json
+       └── smartwatch.json
+
+═══════════════════════════════════════════════════════
+
+✅ AUTOMATIC SETUP:
+   • Folders created on first app launch
+   • Default paths saved in Settings
+   • Ready to use immediately!
+
+═══════════════════════════════════════════════════════
+
+🔧 HOW TO ACCESS ON YOUR PHONE:
+
+   Method 1: File Manager App
+   ---------------------------
+   1. Open "Files" or "My Files" app
+   2. Go to: Internal Storage
+   3. Navigate: Android → data → com.example.imageanalysis → files → SFC
+   4. You'll see: ReferenceImages and ReferenceData folders
+
+   Method 2: Connect to Computer
+   ------------------------------
+   1. Connect phone via USB (File Transfer mode)
+   2. Open phone storage on computer
+   3. Navigate to path above
+   4. Drag and drop files
+
+═══════════════════════════════════════════════════════
+
+📋 FILE NAMING RULES:
+
+   ✅ CORRECT:
+      ReferenceImages/rajveer.jpg  → ReferenceData/rajveer.json
+      ReferenceImages/john.png     → ReferenceData/john.json
+   
+   ❌ WRONG:
+      Image and JSON must have SAME base name!
+      rajveer.jpg → rajvir.json  (won't match)
+
+═══════════════════════════════════════════════════════
+
+🧪 TESTING STEPS:
+
+   1. Install app on Android phone
+   2. Login: Test@example.com / test123
+   3. App creates folders automatically
+   4. Copy test files to folders using File Manager
+   5. Open app → Menu → Settings (verify paths are set)
+   6. Take photo similar to reference image
+   7. Tap "Analyze Match"
+   8. View results and export PDF
+
+═══════════════════════════════════════════════════════
+
+💡 The default paths are ALREADY CONFIGURED in Settings!
+   No need to manually enter paths - just copy your files!
+
+═══════════════════════════════════════════════════════
